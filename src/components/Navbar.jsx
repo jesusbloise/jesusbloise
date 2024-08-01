@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import cv from '../assets/cv.pdf'; // Asegúrate de que la ruta sea correcta
 
 const NavbarContainer = styled.nav`
   position: fixed;
@@ -42,8 +43,8 @@ const NavLink = styled.a`
 const Navbar = () => (
   <NavbarContainer>
     <NavList>
-      <NavItem><NavLink href="#resumen">Resumen</NavLink></NavItem>
-      <NavItem><NavLink href="#mis-trabajos">Mis Trabajos</NavLink></NavItem>
+      <NavItem><NavLink href={cv} target="_blank">Resumen</NavLink></NavItem>
+      <NavItem><NavLink href="#trabajos">Mis Trabajos</NavLink></NavItem>
       <NavItem><NavLink href="#contacto">Contacto</NavLink></NavItem>
     </NavList>
   </NavbarContainer>

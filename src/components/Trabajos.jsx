@@ -68,15 +68,21 @@ const CardDescription = styled.p`
 const Button = styled.a`
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  color: #fff;
-  background-color: #00f260;
+  color: #00f260; /* Color del texto en verde */
+  background-color: transparent; /* Fondo transparente */
   text-decoration: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
   &:hover {
-    background-color: #00c853;
+  border: 2px solid #00f260; /* Borde verde */
+    background-color: #00f260; /* Fondo verde al pasar el ratón */
+    color: #fff; /* Color del texto en blanco */
   }
 `;
+
+
 
 const Trabajos = () => (
   <SectionContainer id="trabajos">
