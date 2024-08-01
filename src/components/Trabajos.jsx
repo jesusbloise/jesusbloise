@@ -1,68 +1,59 @@
 import React from 'react';
 import styled from 'styled-components';
-import trabajo1 from '../assets/trabajo1.png'; // Asegúrate de la ruta correcta
+import trabajo1 from '../assets/trabajo1.png'; // Asegúrate de tener las imágenes en esta ruta
 import trabajo2 from '../assets/trabajo2.png';
-import trabajo3 from '../assets/trabajo3.png';
-import trabajo4 from '../assets/trabajo4.png';
+import Carousel from './Carousel';
 
 const SectionContainer = styled.section`
   min-height: 100vh;
-  padding: 0rem 2rem;
+  padding: -10rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #fff;
   position: relative;
- background: rgba(0, 0, 0, 0.5);
-  margin-top: -4rem; /* Ajusta este valor según lo necesites */
+background: rgba(0, 0, 0, 0.3);
 `;
 
-const Title = styled.h1`
-  font-size: 3rem;
+const Title = styled.h2`
+  font-size: 2.5rem;
   margin-bottom: 2rem;
 `;
 
 const CardContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
-  max-width: 1200px;
   width: 100%;
-  
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
+  max-width: 800px;
 `;
 
 const Card = styled.div`
-  background: rgba(119, 163, 69, 0.3); /* Fondo oscuro y transparente */
-  border-radius: 10%;
-  overflow: hidden;
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3); /* Fondo transparente oscuro */
+  border: 1px solid #333;
+  border-radius: 5%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease;
-  
-  &:hover {
-    transform: translateY(-5px);
-  }
 `;
 
 const CardImage = styled.img`
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: auto;
+  border-radius: 8px;
 `;
 
-const CardTitle = styled.h2`
+const CardTitle = styled.h3`
   font-size: 1.5rem;
   margin: 1rem 0;
 `;
 
 const CardDescription = styled.p`
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin: 0.5rem 0 1.5rem;
+  color: #aaa;
 `;
 
 const Button = styled.a`
@@ -70,49 +61,42 @@ const Button = styled.a`
   font-size: 1rem;
   color: #00f260; /* Color del texto en verde */
   background-color: transparent; /* Fondo transparente */
+  border: 2px solid #00f260; /* Borde verde */
   text-decoration: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
-  
+
   &:hover {
-  border: 2px solid #00f260; /* Borde verde */
     background-color: #00f260; /* Fondo verde al pasar el ratón */
     color: #fff; /* Color del texto en blanco */
   }
 `;
-
-
-
+const SubTitle = styled.h3`
+  font-size: 2rem;
+  margin-top: 4rem;
+  text-align: center;
+  color: #fff;
+`;
 const Trabajos = () => (
   <SectionContainer id="trabajos">
-    <Title>Algunos Trabajos</Title>
+    <Title>Trabajos destacados</Title>
     <CardContainer>
       <Card>
-        <CardImage src={trabajo1} alt="Trabajo 1" />
-        <CardTitle>Trabajo 1</CardTitle>
-        <CardDescription>Descripción breve del trabajo 1.</CardDescription>
-        <Button href="#">Ver Más</Button>
+        <CardImage src={trabajo1} alt="Proyecto 1" />
+        <CardTitle>Pizzeria Mammamia</CardTitle>
+        <CardDescription>Descripción del Proyecto 1.</CardDescription>
+        <Button href="#ver-mas">Ver más</Button>
       </Card>
       <Card>
-        <CardImage src={trabajo2} alt="Trabajo 2" />
-        <CardTitle>Trabajo 2</CardTitle>
-        <CardDescription>Descripción breve del trabajo 2.</CardDescription>
-        <Button href="#">Ver Más</Button>
-      </Card>
-      <Card>
-        <CardImage src={trabajo3} alt="Trabajo 3" />
-        <CardTitle>Trabajo 3</CardTitle>
-        <CardDescription>Descripción breve del trabajo 3.</CardDescription>
-        <Button href="#">Ver Más</Button>
-      </Card>
-      <Card>
-        <CardImage src={trabajo4} alt="Trabajo 4" />
-        <CardTitle>Trabajo 4</CardTitle>
-        <CardDescription>Descripción breve del trabajo 4.</CardDescription>
-        <Button href="#">Ver Más</Button>
+        <CardImage src={trabajo2} alt="Proyecto 2" />
+        <CardTitle>Inmobiliaria ADL</CardTitle>
+        <CardDescription>Descripción del Proyecto 2.</CardDescription>
+        <Button href="#ver-mas">Ver más</Button>
       </Card>
     </CardContainer>
+    <SubTitle>Proyectos archivados</SubTitle>
+    <Carousel />
   </SectionContainer>
 );
 

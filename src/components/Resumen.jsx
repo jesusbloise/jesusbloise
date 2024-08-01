@@ -14,7 +14,7 @@ const SectionContainer = styled.section`
   background: url('/background.jpg') no-repeat center center fixed; /* Verifica que la imagen esté correctamente cargada */
   background-size: cover; /* Asegúrate de que la imagen cubra todo el fondo */
   background-blur: 2px; /* Opcional: desenfoque de fondo */
-  margin-bottom: -4rem; /* Ajusta este valor según lo necesites */
+  margin-bottom: -10rem; /* Ajusta este valor según lo necesites */
 `;
 
 const ProfileImage = styled.img`
