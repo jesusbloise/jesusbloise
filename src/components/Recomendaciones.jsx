@@ -49,6 +49,7 @@ const Card = styled.div`
   align-items: center;
   text-align: left;
   color: #0a0a23;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 `;
 
 const CarouselContainer = styled.div`

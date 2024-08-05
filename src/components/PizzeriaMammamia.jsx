@@ -1,37 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
-import trabajo1 from '../assets/trabajo1.png'; 
 
-const SectionContainer = styled.section`
+const PageContainer = styled.div`
   padding: 2rem;
-  color: #0a0a23;
+  max-width: 800px;
+  margin: auto;
 `;
 
-const Title = styled.h2`
+const Title = styled.h1`
   font-size: 2.5rem;
-  margin-bottom: 2rem;
-`;
-
-const Image = styled.img`
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 2rem;
+  color: #333;
 `;
 
 const Description = styled.p`
-  font-size: 1.25rem;
-  color: #747474;
+  font-size: 1.2rem;
+  color: #666;
 `;
 
 const PizzeriaMammamia = () => (
-  <SectionContainer>
+  <PageContainer>
     <Title>Pizzeria Mammamia</Title>
-    <Image src={trabajo1} alt="Pizzeria Mammamia" />
     <Description>
-      Página web para pizzería con carrito de compra. Incluye características como...
+      Aquí va la descripción completa del proyecto Pizzeria Mammamia.
+      Puedes incluir detalles sobre la tecnología utilizada, el proceso de desarrollo, etc.
     </Description>
-  </SectionContainer>
+  </PageContainer>
 );
 
 export default PizzeriaMammamia;
+

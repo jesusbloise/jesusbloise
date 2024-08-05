@@ -38,7 +38,7 @@ const Card = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 `;
 
 const CardImage = styled.img`
@@ -91,7 +91,7 @@ const Trabajos = () => (
         <CardImage src={trabajo1} alt="Proyecto 1" />
         <CardTitle>Pizzeria Mammamia</CardTitle>
         <CardDescription>Pagina web para pizzeria con carrito de compra.</CardDescription>
-        <Button href="./PizzeriaMammamia.jsx">Ver más</Button>
+        <Button href="#Pizzeria">Ver más</Button>
       </Card>
       <Card>
         <CardImage src={trabajo2} alt="Proyecto 2" />

@@ -37,7 +37,7 @@ const SectionContainer = styled.section`
   background: url('/background.jpg') no-repeat center center fixed;
   background-size: cover;
   background-blur: 2px;
-  margin-bottom: -10rem;
+  margin-bottom: -10rem;s
 `;
 
 const ProfileImage = styled.img`
@@ -46,6 +46,7 @@ const ProfileImage = styled.img`
   border-radius: 50%;
   border: 3px solid white;
   margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 `;
 
 const ContentContainer = styled.div`
