@@ -8,7 +8,7 @@ const NavbarContainer = styled.nav`
   left: 0;
   width: 100%;
   padding: 1rem;
-background: rgba(0, 0, 0, 0.8); /* Asegúrate de que no tenga opacidad */
+  background: white; /* Asegúrate de que no tenga opacidad */
   display: flex;
   justify-content: center;
   z-index: 1000; /* Asegúrate de que tenga un z-index alto */
@@ -29,14 +29,14 @@ const NavItem = styled.li`
 const NavLink = styled.a`
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  color: #fff;
+  color: #0a0a23;
   text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.3s ease; /* Transición para suavizar el cambio de color */
   
   &:hover {
-    background-color: #00f260;
-    color: #fff;
+    background-color: #9e9e9e;
+    color: #0a0a30;
   }
 `;
 

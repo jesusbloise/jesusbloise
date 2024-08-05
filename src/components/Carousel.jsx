@@ -3,31 +3,31 @@ import Slider from 'react-slick';
 import styled from 'styled-components';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import trabajo1 from '../assets/trabajo1.1.png';
-import trabajo2 from '../assets/trabajo2.1.png';
-import trabajo3 from '../assets/trabajo3.1.png';
-import trabajo4 from '../assets/trabajo4.1.png';
+import trabajo1 from '../assets/trabajo1.png';
+import trabajo2 from '../assets/trabajo2.png';
+import trabajo3 from '../assets/trabajo3.png';
+import trabajo4 from '../assets/trabajo4.png';
 
 const CarouselContainer = styled.div`
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: -15rem ;
 `;
 
 const Slide = styled.div`
   display: flex !important;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  
   border-radius: 5%;
-  padding: 1rem;
+  padding: 0rem;
 `;
 
 const SlideImage = styled.img`
   width: 100%;
   height: auto;
-  background-color: rgba(0, 0, 0, 1);
+  
   
 `;
 

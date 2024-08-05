@@ -1,7 +1,30 @@
 import React from 'react';
-import styled from 'styled-components';
-import profilePic from '../assets/selfi.jpg'; // Asegúrate de tener la imagen en esta ruta
+import styled, { keyframes, css } from 'styled-components';
+import profilePic from '../assets/jesus1.png';
+import {
+  FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase,
+  FaGitAlt, FaBootstrap, FaPython
+} from 'react-icons/fa';
+import { SiMongodb, SiExpress, SiTypescript, SiOracle } from 'react-icons/si';
 
+// Keyframes for bouncing animation
+const bounce = keyframes`
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+`;
+
+const getAnimationDelay = (index) => {
+  return css`
+    animation-delay: ${index * 0.2}s;
+  `;
+};
 
 const SectionContainer = styled.section`
   min-height: 100vh;
@@ -9,32 +32,33 @@ const SectionContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #fff;
+  color: #0a0a23;
   position: relative;
-  background: url('/background.jpg') no-repeat center center fixed; /* Verifica que la imagen esté correctamente cargada */
-  background-size: cover; /* Asegúrate de que la imagen cubra todo el fondo */
-  background-blur: 2px; /* Opcional: desenfoque de fondo */
-  margin-bottom: -10rem; /* Ajusta este valor según lo necesites */
+  background: url('/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-blur: 2px;
+  margin-bottom: -10rem;
 `;
 
 const ProfileImage = styled.img`
   width: 200px;
   height: 200px;
-  border-radius: 10%;
-  border: 3px solid #00f260;
+  border-radius: 50%;
+  border: 3px solid white;
   margin-bottom: 2rem;
 `;
 
 const ContentContainer = styled.div`
   text-align: center;
-  background: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad para el contenido */
-  padding: 2rem;
+  background: #EEEDED;
+  padding: 1rem;
   border-radius: 10px;
 `;
 
 const Title = styled.h1`
   font-size: 3rem;
   margin: 0;
+  color: #747474;
 `;
 
 const Subtitle = styled.h2`
@@ -44,24 +68,38 @@ const Subtitle = styled.h2`
   color: #aaa;
 `;
 
-const ButtonContainer = styled.div`
+const SkillsContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  margin-top: 2rem;
 `;
 
-const Button = styled.a`
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  color: #fff;
-  background-color: #00f260;
-  text-decoration: none;
-  border-radius: 4px;
-  cursor: pointer;
-  &:hover {
-    background-color: #00c853;
-  }
+const Skill = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0a0a23;
+  animation: ${bounce} 2s infinite;
+  ${(props) => getAnimationDelay(props.index)}
 `;
+
+const skills = [
+  { name: 'HTML', icon: <FaHtml5 size={40} color="#E34F26" /> },
+  { name: 'CSS', icon: <FaCss3Alt size={40} color="#1572B6" /> },
+  { name: 'JavaScript', icon: <FaJs size={40} color="#F7DF1E" /> },
+  { name: 'React', icon: <FaReact size={40} color="#61DAFB" /> },
+  { name: 'Node.js', icon: <FaNodeJs size={40} color="#339933" /> },
+  { name: 'MongoDB', icon: <SiMongodb size={40} color="#47A248" /> },
+  { name: 'SQL', icon: <FaDatabase size={40} color="#4479A1" /> },
+  { name: 'Express', icon: <SiExpress size={40} color="#000000" /> },
+  { name: 'Git', icon: <FaGitAlt size={40} color="#F05032" /> },
+  { name: 'TypeScript', icon: <SiTypescript size={40} color="#007ACC" /> },
+  { name: 'Bootstrap', icon: <FaBootstrap size={40} color="#7952B3" /> },
+  { name: 'Python', icon: <FaPython size={40} color="#3776AB" /> },
+  { name: 'Oracle', icon: <SiOracle size={40} color="#F80000" /> },
+];
 
 const Resumen = () => (
   <SectionContainer id="resumen">
@@ -69,10 +107,14 @@ const Resumen = () => (
     <ContentContainer>
       <Title>Hola, soy Jesus Bloise</Title>
       <Subtitle>Soy diseñador de productos con más de 3 años de experiencia en la industria Edtech.</Subtitle>
-      <ButtonContainer>
-        <Button href="#contacto">Contacto</Button>
-        <Button href="/resume.pdf" target="_blank">Resume</Button>
-      </ButtonContainer>
+      <SkillsContainer>
+        {skills.map((skill, index) => (
+          <Skill key={index} index={index}>
+            {skill.icon}
+            <p>{skill.name}</p>
+          </Skill>
+        ))}
+      </SkillsContainer>
     </ContentContainer>
   </SectionContainer>
 );
