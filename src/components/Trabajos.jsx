@@ -18,7 +18,7 @@ const SectionContainer = styled.section`
 const Title = styled.h2`
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #747474;
+  color: #333;
 `;
 
 const CardContainer = styled.div`
@@ -80,7 +80,7 @@ const SubTitle = styled.h3`
   font-size: 2rem;
   margin-top: 4rem;
   text-align: center;
-  color: #747474;
+  color: #333;
 `;
 
 const Trabajos = () => (

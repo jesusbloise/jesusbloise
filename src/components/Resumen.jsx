@@ -59,14 +59,14 @@ const ContentContainer = styled.div`
 const Title = styled.h1`
   font-size: 3rem;
   margin: 0;
-  color: #747474;
+  color: #333;
 `;
 
 const Subtitle = styled.h2`
   font-size: 1.5rem;
   font-weight: 400;
   margin: 0.5rem 0 2rem;
-  color: #aaa;
+  color: #333;
 `;
 
 const SkillsContainer = styled.div`

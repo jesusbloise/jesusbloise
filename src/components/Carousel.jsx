@@ -32,7 +32,7 @@ const SlideImage = styled.img`
 `;
 
 const SlideTitle = styled.h3`
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #fff;
   text-align: center;
   margin-top: 1rem;

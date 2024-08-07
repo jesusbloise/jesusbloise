@@ -19,13 +19,13 @@ const SectionContainer = styled.section`
 const Title = styled.h2`
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #747474;
+  color: #333;
 `;
 
 const Subtitle = styled.h3`
   font-size: 1.25rem;
   margin-bottom: 2rem;
-  color: #aaa;
+  color: #333;
 `;
 
 const CardContainer = styled.div`
@@ -95,7 +95,7 @@ const CardSubtitle = styled.h4`
 
 const Description = styled.p`
   font-size: 0.875rem;
-  color: #aaa;
+  color: #333;
 `;
 
 const Recomendaciones = () => {

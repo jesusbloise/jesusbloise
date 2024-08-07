@@ -22,7 +22,7 @@ const Title = styled.h2`
 const Subtitle = styled.h3`
   font-size: 1.25rem;
   margin-bottom: 2rem;
-  color: #aaa;
+  color: #333;
 `;
 
 const Button = styled.a`
