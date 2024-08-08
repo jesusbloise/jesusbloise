@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import trabajo1 from '../assets/trabajo1.png';
 import trabajo2 from '../assets/trabajo2.png';
 import Carousel from './Carousel';
@@ -59,7 +60,7 @@ const CardDescription = styled.p`
   color: #666;
 `;
 
-const Button = styled.a`
+const button = styled.a`
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   color: #0a0a23;
@@ -91,13 +92,13 @@ const Trabajos = () => (
         <CardImage src={trabajo1} alt="Proyecto 1" />
         <CardTitle>Pizzeria Mammamia</CardTitle>
         <CardDescription>Pagina web para pizzeria con carrito de compra.</CardDescription>
-        <Button href="#Pizzeria">Ver más</Button>
+        <Link to="/pizzeria-mammamia"><button>Ver más</button></Link>
       </Card>
       <Card>
         <CardImage src={trabajo2} alt="Proyecto 2" />
         <CardTitle>Inmobiliaria ADL</CardTitle>
         <CardDescription>Pagina web donde mostramos ventas y alquileres de inmuebles.</CardDescription>
-        <Button href="#ver-mas">Ver más</Button>
+        <Link to="/inmobiliaria-adl"><button>Ver más</button></Link>
       </Card>
     </CardContainer>
     <SubTitle>Proyectos archivados</SubTitle>
