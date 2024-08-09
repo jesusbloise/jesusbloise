@@ -35,8 +35,8 @@ const NavLink = styled.a`
   transition: background-color 0.3s ease; /* Transición para suavizar el cambio de color */
   
   &:hover {
-    background-color: #9e9e9e;
-    color: #0a0a30;
+    background-color: black;
+    color: white;
   }
 `;
 
@@ -45,6 +45,7 @@ const Navbar = () => (
     <NavList>
       <NavItem><NavLink href={cv} target="_blank">Resumen</NavLink></NavItem>
       <NavItem><NavLink href="#trabajos">Mis Trabajos</NavLink></NavItem>
+      <NavItem><NavLink href="https://my-game-jab.netlify.app/" target="_blank">Juego</NavLink></NavItem>
       <NavItem><NavLink href="#contacto">Contacto</NavLink></NavItem>
     </NavList>
   </NavbarContainer>

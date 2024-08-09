@@ -35,14 +35,14 @@ const Button = styled(Link)`
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   color: white;
-  background-color: #0a0a23;
+  background-color: black;
   text-decoration: none;
   border-radius: 4px;
   display: inline-block;
   margin-bottom: 2rem;
 
   &:hover {
-    background-color: #333;
+    background-color: #0056b3;
   }
 `;
 
