@@ -7,7 +7,17 @@ const ContactContainer = styled.div`
   text-align: center;
   background-color: #f9f9f9;
 `;
+const Title1 = styled.h2`
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0a0a23;
+`;
 
+const Subtitle = styled.h3`
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #333;
+`;
 const Title = styled.h2`
   font-size: 2.5rem;
   color: #333;
@@ -54,7 +64,9 @@ const IconLink = styled.a`
 
 const ContactCard = () => (
   <ContactContainer id="contacto">
-    <Title>Contacto</Title>
+     <Title1>¡Vamos a trabajar juntos!</Title1>
+     <Subtitle>Estoy abierto a oportunidades de trabajo a tiempo completo y como freelance.</Subtitle>
+    {/* <Title>Contacto</Title> */}
     <ButtonContainer>
       <Button href="mailto:jesusbloise@gmail.com">Enviar un correo electrónico</Button>
       <Button href="https://wa.me/message/YPAUKOHCVXSWP1" target="_blank" rel="noopener noreferrer">

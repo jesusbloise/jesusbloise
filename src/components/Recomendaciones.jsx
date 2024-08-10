@@ -104,28 +104,28 @@ const Recomendaciones = () => {
       id: 1,
       name: "Luis Enrique Rodrigues Pena",
       title: "Software Engineer",
-      description: "Bloise demuestra una agilidad excepcional a la hora de responder a las cambiantes necesidades empresariales y siempre entrega los diseños a tiempo. A lo largo del ciclo de vida del diseño, explora múltiples enfoques, evalúa sus méritos y ofrece constantemente soluciones innovadoras sin comprometer la calidad. Sus contribuciones desempeñaron un papel fundamental en nuestro éxito en Leap, mejorando significativamente nuestros esfuerzos de desarrollo.",
+      description: "Jesus Bloise demuestra una agilidad excepcional a la hora de responder a las cambiantes necesidades empresariales y siempre entrega los diseños a tiempo. A lo largo del ciclo de vida del diseño, explora múltiples enfoques, evalúa sus méritos y ofrece constantemente soluciones innovadoras sin comprometer la calidad. Sus contribuciones desempeñaron un papel fundamental en nuestro éxito, mejorando significativamente nuestros esfuerzos de desarrollo.",
       image: luis
     },
     {
       id: 2,
       name: "Diego Ramirez",
       title: "Product Manager en Pernostock",
-      description: "Recomiendo encarecidamente a Bloise para cualquier proyecto colaborativo o función en el ámbito del diseño de UX. Su amplia experiencia en diseño en diversas industrias facilita una relación de trabajo fluida. Se adapta rápidamente a nuevos proyectos y ofrece constantemente resultados excepcionales.",
+      description: "Recomiendo encarecidamente a Jesus loise para cualquier proyecto colaborativo o función en el ámbito del desarrollo Web. Su amplia experiencia en diseño en diversas industrias facilita una relación de trabajo fluida. Se adapta rápidamente a nuevos proyectos y ofrece constantemente resultados excepcionales.",
       image: diego
     },
     {
       id: 3,
       name: "Dayana Alvarez",
       title: "UX Designer",
-      description: "Bloise siempre aportaba una energía increíble a cada proyecto. No tenía miedo de desafiar el status quo y se aseguraba de que exploráramos las mejores soluciones posibles. Bloise tenía una capacidad única para proponer ideas prácticas a corto plazo y conceptos ambiciosos, lo que enriqueció significativamente nuestras sesiones de intercambio de ideas. Además, incorporaba los comentarios de manera excepcional y refinaba y mejoraba continuamente sus diseños.",
+      description: "Jesus Bloise siempre aportaba una energía increíble a cada proyecto. No tenía miedo de desafiar el status y se aseguraba de que exploráramos las mejores soluciones posibles. Bloise tenía una capacidad única para proponer ideas prácticas a corto plazo y conceptos ambiciosos, lo que enriqueció significativamente nuestras sesiones de intercambio de ideas. Además, incorporaba los comentarios de manera excepcional y refinaba y mejoraba continuamente sus diseños.",
       image: dayana
     },
     {
       id: 4,
       name: "Corina Varas",
       title: "Ssr. Advanced Web UI Developer for FIFA @ Globant",
-      description: "Bloise demostró una gran capacidad para trabajar en estrecha colaboración con los ingenieros, comunicar eficazmente las intenciones de diseño e iterar en función de los comentarios técnicos. Sus diseños siempre tuvieron en cuenta tanto la experiencia del usuario como las limitaciones técnicas, lo que garantizó una implementación fluida por parte del equipo de desarrollo. El enfoque proactivo de Suraj para las pruebas de usabilidad y la iteración dio como.",
+      description: "Jesus Bloise demostró una gran capacidad para trabajar en estrecha colaboración con los ingenieros, comunicar eficazmente las intenciones de diseño e iterar en función de los comentarios técnicos. Sus diseños siempre tuvieron en cuenta tanto la experiencia del usuario como las limitaciones técnicas, lo que garantizó una implementación fluida por parte del equipo de desarrollo. El enfoque proactivo de Jesus Bloise para las pruebas de usabilidad y la iteración dio como.",
       image: corina
     }
   ];
