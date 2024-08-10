@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaLinkedin, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa'; // Asegúrate de importar los iconos correctos
+import { FaLinkedin, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 
 const ContactContainer = styled.div`
   padding: 2rem;
@@ -43,12 +43,12 @@ const IconContainer = styled.div`
 `;
 
 const IconLink = styled.a`
-  color: #747474;
+  color: ${({ $color }) => $color};
   font-size: 3rem;
   transition: color 0.3s ease;
 
   &:hover {
-    color: ${({ hoverColor }) => hoverColor || '#007bff'};
+    color: ${({ $hovercolor }) => $hovercolor};
   }
 `;
 
@@ -56,20 +56,22 @@ const ContactCard = () => (
   <ContactContainer id="contacto">
     <Title>Contacto</Title>
     <ButtonContainer>
-      <Button href="mailto:tu-email@example.com">Enviar un correo electrónico</Button>
-      <Button href="https://wa.me/tu-numero-whatsapp" target="_blank" rel="noopener noreferrer">¿Quieres hablar por WhatsApp?</Button>
+      <Button href="mailto:jesusbloise@gmail.com">Enviar un correo electrónico</Button>
+      <Button href="https://wa.me/message/YPAUKOHCVXSWP1" target="_blank" rel="noopener noreferrer">
+        ¿Quieres hablar por WhatsApp?
+      </Button>
     </ButtonContainer>
     <IconContainer>
-      <IconLink href="https://www.linkedin.com/in/tu-perfil-linkedin" hoverColor="#0e76a8" target="_blank" rel="noopener noreferrer">
+      <IconLink href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" $color="#0e76a8" $hovercolor="#08457e" target="_blank" rel="noopener noreferrer">
         <FaLinkedin />
       </IconLink>
-      <IconLink href="https://www.instagram.com/tu-perfil-instagram" hoverColor="#E1306C" target="_blank" rel="noopener noreferrer">
+      <IconLink href="https://www.instagram.com/s.o.s.c.o.d/" $color="#E1306C" $hovercolor="#ad2b5b" target="_blank" rel="noopener noreferrer">
         <FaInstagram />
       </IconLink>
-      <IconLink href="https://twitter.com/tu-perfil-twitter" hoverColor="#1DA1F2" target="_blank" rel="noopener noreferrer">
+      <IconLink href="https://x.com/jesusbloiseofi?s=21" $color="#1DA1F2" $hovercolor="#178dbf" target="_blank" rel="noopener noreferrer">
         <FaTwitter />
       </IconLink>
-      <IconLink href="https://wa.me/tu-numero-whatsapp" hoverColor="#25D366" target="_blank" rel="noopener noreferrer">
+      <IconLink href="https://wa.me/message/YPAUKOHCVXSWP1" $color="#25D366" $hovercolor="#1b9f50" target="_blank" rel="noopener noreferrer">
         <FaWhatsapp />
       </IconLink>
     </IconContainer>
@@ -77,6 +79,169 @@ const ContactCard = () => (
 );
 
 export default ContactCard;
+
+
+// import React from 'react';
+// import styled from 'styled-components';
+// import { FaLinkedin, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa';
+
+// const ContactContainer = styled.div`
+//   padding: 2rem;
+//   text-align: center;
+//   background-color: #f9f9f9;
+// `;
+
+// const Title = styled.h2`
+//   font-size: 2.5rem;
+//   color: #333;
+//   margin-bottom: 1rem;
+// `;
+
+// const ButtonContainer = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   gap: 1rem;
+//   margin-top: 2rem;
+// `;
+
+// const Button = styled.a`
+//   padding: 0.75rem 1.5rem;
+//   font-size: 1rem;
+//   color: white;
+//   background-color: black;
+//   text-decoration: none;
+//   border-radius: 4px;
+//   transition: background-color 0.3s ease;
+
+//   &:hover {
+//     background-color: #0056b3;
+//   }
+// `;
+
+// const IconContainer = styled.div`
+//   margin-top: 2rem;
+//   display: flex;
+//   justify-content: center;
+//   gap: 1.5rem;
+// `;
+
+// const IconLink = styled.a`
+//   color: ${({ color }) => color};
+//   font-size: 3rem;
+//   transition: color 0.3s ease;
+
+//   &:hover {
+//     color: ${({ hovercolor }) => hovercolor};
+//   }
+// `;
+
+// const ContactCard = () => (
+//   <ContactContainer id="contacto">
+//     <Title>Contacto</Title>
+//     <ButtonContainer>
+//       <Button href="mailto:tu-email@example.com">Enviar un correo electrónico</Button>
+//       <Button href="https://wa.me/tu-numero-whatsapp" target="_blank" rel="noopener noreferrer">
+//         ¿Quieres hablar por WhatsApp?
+//       </Button>
+//     </ButtonContainer>
+//     <IconContainer>
+//       <IconLink href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" color="#0e76a8" hovercolor="#08457e" target="_blank" rel="noopener noreferrer">
+//         <FaLinkedin />
+//       </IconLink>
+//       <IconLink href="https://www.instagram.com/s.o.s.c.o.d/" color="#E1306C" hovercolor="#ad2b5b" target="_blank" rel="noopener noreferrer">
+//         <FaInstagram />
+//       </IconLink>
+//       <IconLink href="https://x.com/jesusbloiseofi?s=21" color="#1DA1F2" hovercolor="#178dbf" target="_blank" rel="noopener noreferrer">
+//         <FaTwitter />
+//       </IconLink>
+//       <IconLink href="https://wa.me/message/YPAUKOHCVXSWP1" color="#25D366" hovercolor="#1b9f50" target="_blank" rel="noopener noreferrer">
+//         <FaWhatsapp />
+//       </IconLink>
+//     </IconContainer>
+//   </ContactContainer>
+// );
+
+// export default ContactCard;
+
+// import React from 'react';
+// import styled from 'styled-components';
+// import { FaLinkedin, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa'; // Asegúrate de importar los iconos correctos
+
+// const ContactContainer = styled.div`
+//   padding: 2rem;
+//   text-align: center;
+//   background-color: #f9f9f9;
+// `;
+
+// const Title = styled.h2`
+//   font-size: 2.5rem;
+//   color: #333;
+//   margin-bottom: 1rem;
+// `;
+
+// const ButtonContainer = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   gap: 1rem;
+//   margin-top: 2rem;
+// `;
+
+// const Button = styled.a`
+//   padding: 0.75rem 1.5rem;
+//   font-size: 1rem;
+//   color: white;
+//   background-color: black;
+//   text-decoration: none;
+//   border-radius: 4px;
+//   transition: background-color 0.3s ease;
+
+//   &:hover {
+//     background-color: #0056b3;
+//   }
+// `;
+
+// const IconContainer = styled.div`
+//   margin-top: 2rem;
+//   display: flex;
+//   justify-content: center;
+//   gap: 1.5rem;
+// `;
+
+// const IconLink = styled.a`
+//   color: #747474;
+//   font-size: 3rem;
+//   transition: color 0.3s ease;
+
+//   &:hover {
+//     color: ${({ hoverColor }) => hoverColor || '#007bff'};
+//   }
+// `;
+
+// const ContactCard = () => (
+//   <ContactContainer id="contacto">
+//     <Title>Contacto</Title>
+//     <ButtonContainer>
+//       <Button href="mailto:tu-email@example.com">Enviar un correo electrónico</Button>
+//       <Button href="https://wa.me/tu-numero-whatsapp" target="_blank" rel="noopener noreferrer">¿Quieres hablar por WhatsApp?</Button>
+//     </ButtonContainer>
+//     <IconContainer>
+//       <IconLink href="https://www.linkedin.com/in/tu-perfil-linkedin" hoverColor="#0e76a8" target="_blank" rel="noopener noreferrer">
+//         <FaLinkedin />
+//       </IconLink>
+//       <IconLink href="https://www.instagram.com/tu-perfil-instagram" hoverColor="#E1306C" target="_blank" rel="noopener noreferrer">
+//         <FaInstagram />
+//       </IconLink>
+//       <IconLink href="https://twitter.com/tu-perfil-twitter" hoverColor="#1DA1F2" target="_blank" rel="noopener noreferrer">
+//         <FaTwitter />
+//       </IconLink>
+//       <IconLink href="https://wa.me/tu-numero-whatsapp" hoverColor="#25D366" target="_blank" rel="noopener noreferrer">
+//         <FaWhatsapp />
+//       </IconLink>
+//     </IconContainer>
+//   </ContactContainer>
+// );
+
+// export default ContactCard;
 
 
 // import React from 'react';
