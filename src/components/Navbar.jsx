@@ -46,7 +46,7 @@ const NavItem = styled.li`
 const NavLink = styled.a`
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  color: #0a0a23;
+  color: black;
   text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.3s ease;
@@ -73,7 +73,7 @@ const HamburgerButton = styled.button`
   
   @media (max-width: 768px) {
     display: block;
-    justify-content: space-between;
+    
   }
 `;
 

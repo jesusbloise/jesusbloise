@@ -106,8 +106,8 @@ const Resumen = () => (
   <SectionContainer id="resumen">
     <ProfileImage src={profilePic} alt="Perfil de Jesus Bloise" />
     <ContentContainer>
-      <Title>Hola, soy Jesus Bloise</Title>
-      <Subtitle>Soy diseñador de productos con más de 3 años de experiencia en la industria Edtech.</Subtitle>
+      <Title>¡Hola. soy Jesus Bloise!</Title>
+      <Subtitle>Soy Software Engineer con más de 3 años de experiencia en la industria TI.</Subtitle>
       <SkillsContainer>
         {skills.map((skill, index) => (
           <Skill key={index} index={index}>

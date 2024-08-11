@@ -169,7 +169,7 @@ const Recomendaciones = () => {
         ))}
       </CardContainer>
       <CarouselContainer>
-        <Carousel responsive={responsive} infinite autoPlay>
+        <Carousel responsive={responsive} infinite >
           {recommendations.map((rec) => (
             <Card key={rec.id}>
               <Image src={rec.image} alt={`Foto de ${rec.name}`} />
