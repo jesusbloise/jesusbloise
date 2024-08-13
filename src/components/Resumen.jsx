@@ -28,7 +28,9 @@ const getAnimationDelay = (index) => {
 
 const SectionContainer = styled.section`
   min-height: 100vh;
-  padding: 4rem 2rem;
+  padding: 9rem 2rem;
+  margin-top: -3rem;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;

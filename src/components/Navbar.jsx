@@ -22,8 +22,8 @@ const NavList = styled.ul.withConfig({
   display: flex;
   gap: 2rem;
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 1rem;
+  margin: 0rem;
   
   
   @media (max-width: 768px) {
