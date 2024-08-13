@@ -414,7 +414,7 @@ object-assign
   font-size: 0.875rem;
   margin-top: 2rem;
 `,Z3=()=>w.jsx(J3,{children:"Creado por un desarrollador web alimentado por el café y la pasión por el diseño ❤️"}),e5=M.div`
-  padding: 2rem;
+  padding: 4rem 2rem;
   max-width: 800px;
   margin: auto;
   text-align: center;
@@ -446,7 +446,7 @@ object-assign
     background-color: #0056b3;
   }
 `,o5=()=>w.jsxs(e5,{children:[w.jsx(t5,{children:"Pizzeria Mammamia"}),w.jsx(n5,{src:yc,alt:"Pizzeria Mammamia"}),w.jsxs(r5,{children:[w.jsx("strong",{children:"Descripción del Proyecto:"})," Pizzeria Mammamia es una aplicación web diseñada para facilitar el proceso de pedido y compra de pizzas. La plataforma permite a los usuarios explorar el menú, seleccionar productos, agregar opciones a un carrito de compra y realizar pedidos en línea.",w.jsx("br",{}),w.jsx("br",{}),w.jsx("strong",{children:"Tecnologías Utilizadas:"}),w.jsxs("ul",{children:[w.jsxs("li",{children:[w.jsx("strong",{children:"Frontend:"})," React para la interfaz de usuario, proporcionando una experiencia interactiva y dinámica."]}),w.jsxs("li",{children:[w.jsx("strong",{children:"Estilizado:"})," Styled-components para un diseño modular y mantenimiento eficiente de los estilos."]}),w.jsxs("li",{children:[w.jsx("strong",{children:"Enrutamiento:"})," React Router para manejar la navegación entre las diferentes páginas de la aplicación."]})]}),w.jsx("br",{}),w.jsx("strong",{children:"Detalles Técnicos:"}),w.jsxs("ul",{children:[w.jsxs("li",{children:[w.jsx("strong",{children:"Componentización:"})," La aplicación está dividida en componentes reutilizables como el menú, carrito de compras y detalles del producto, mejorando la organización y mantenibilidad del código."]}),w.jsxs("li",{children:[w.jsx("strong",{children:"Estado de la Aplicación:"})," Manejo del estado global utilizando React Context para compartir datos entre componentes sin necesidad de pasar props de manera manual."]}),w.jsxs("li",{children:[w.jsx("strong",{children:"Responsive Design:"})," La interfaz está optimizada para dispositivos móviles y de escritorio, garantizando una experiencia de usuario coherente en diferentes tamaños de pantalla."]})]})]}),w.jsx(i5,{to:"/",children:"Volver al portafolio"}),w.jsx(Rc,{})]}),l5=M.div`
-  padding: 2rem;
+  padding: 4rem 2rem;
   max-width: 800px;
   margin: auto;
   text-align: center;

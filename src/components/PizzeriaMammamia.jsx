@@ -5,7 +5,7 @@ import trabajo1 from '../assets/trabajo1.png';
 import ContactCard from './ContactCard';
 
 const PageContainer = styled.div`
-  padding: 2rem;
+  padding: 4rem 2rem;
   max-width: 800px;
   margin: auto;
   text-align: center;
