@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import cv from '../assets/cv.pdf'; // Asegúrate de que la ruta sea correcta
+import cv from '../assets/Jesús_Alberto_Bloise_Rodríguez(ingles).pdf'; // Asegúrate de que la ruta sea correcta
 
 const NavbarContainer = styled.nav`
   position: fixed;
