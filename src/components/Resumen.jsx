@@ -28,7 +28,9 @@ const getAnimationDelay = (index) => {
 
 const SectionContainer = styled.section`
   min-height: 100vh;
-  padding: 4rem 2rem;
+  padding: 9rem 2rem;
+  margin-top: -3rem;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,14 +61,14 @@ const ContentContainer = styled.div`
 const Title = styled.h1`
   font-size: 3rem;
   margin: 0;
-  color: #747474;
+  color: #333;
 `;
 
 const Subtitle = styled.h2`
   font-size: 1.5rem;
   font-weight: 400;
   margin: 0.5rem 0 2rem;
-  color: #aaa;
+  color: #333;
 `;
 
 const SkillsContainer = styled.div`
@@ -106,8 +108,8 @@ const Resumen = () => (
   <SectionContainer id="resumen">
     <ProfileImage src={profilePic} alt="Perfil de Jesus Bloise" />
     <ContentContainer>
-      <Title>Hola, soy Jesus Bloise</Title>
-      <Subtitle>Soy diseñador de productos con más de 3 años de experiencia en la industria Edtech.</Subtitle>
+      <Title>¡Hola. soy Jesus Bloise!</Title>
+      <Subtitle>Soy Software Engineer con más de 3 años de experiencia en la industria TI.</Subtitle>
       <SkillsContainer>
         {skills.map((skill, index) => (
           <Skill key={index} index={index}>
